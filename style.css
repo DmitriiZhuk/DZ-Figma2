@@ -84,6 +84,8 @@ a {
 .chapters {
     display: grid;
     grid-template-areas: "women men kids" "accesories accesories accesories";
+    justify-content: center;
+    align-content: center;
     gap: 20px;
     margin-bottom: 50px;
 }
