@@ -65,7 +65,7 @@ a {
 }
 
 .brand__logo {
-    width: 800px;
+    width: 70%;
 }
 
 .brand__text {
@@ -90,45 +90,23 @@ a {
     margin-bottom: 50px;
 }
 
-.chapters__overall {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 .chapters__women {
-    width: 360px;
-    height: 260px;
     grid-area: women;
-    background-image: url(img/ch_woman.svg);
 }
 
 .chapters__men {
-    width: 360px;
-    height: 260px;
     grid-area: men;
-    background-image: url(img/ch_man.svg);
 }
 
 .chapters__kids {
-    width: 360px;
-    height: 260px;
     grid-area: kids;
-    background-image: url(img/ch_kid.svg);
 }
 
 .chapters__accesories {
     grid-area: accesories;
-    background-image: url(img/ch_acc.svg);
-    width: 1140px;
-    height: 180px;
 }
 
 .chapters__text {
-    text-align: center;
     width: 400;
     color: white;
 }
@@ -198,4 +176,23 @@ a {
     border-color: #F16D7F;
     font-family: "Lato";
     color: #F16D7F;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .brand__logo {
+        width: 60%;
+    }
+
+    .brand__text {
+        font-size: 36px;
+    }
+
+    .centered {
+        padding-left: calc(50% - 502px);
+        padding-right: calc(50% - 502px);
+    }
+
+    .examples {
+        grid-template-columns: repeat(2, 2fr);
+    }
 }
