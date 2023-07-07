@@ -196,3 +196,30 @@ a {
         grid-template-columns: repeat(2, 2fr);
     }
 }
+
+@media (max-width:767px) {
+    .brand {
+        height: 363px;
+    }
+
+    .brand__logo {
+        visibility: hidden;
+        width: 0px;
+    }
+
+
+    .brand__text {
+        font-size: 26px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .examples {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .chapters {
+        grid-template-areas:"women" "men" "kids" "accesories";
+        justify-items: center;
+    }
+}
