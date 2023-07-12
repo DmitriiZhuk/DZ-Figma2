@@ -178,6 +178,113 @@ a {
     color: #F16D7F;
 }
 
+.footer {
+    background-color: #000000;
+}
+
+.footer_delivery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fd-item {
+    margin: 130px 0;
+    text-align: center;
+    max-width: 25vw;
+}
+
+.h3_footer {
+    color: #FBFBFB;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.footer_text {
+    margin: 15px;
+    color: #FBFBFB;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
+.subscribe_overall {
+    position: absolute;
+    width: 100%;
+
+    /* opacity: 0.8; */
+}
+
+.subscribe_overall img {
+    width: 100%;
+    height: auto;
+}
+
+.subscribe_relative {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.s_item {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s_photo {
+    border-radius: 50%;
+    width: 140px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.s_text {
+    color: #cdcdd3;
+    font-style: italic;
+}
+
+.item_subscribed {
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
+}
+
+.item_subscribed input,
+.item_subscribed button {
+    display: block;
+    padding: 8px 10px;
+    border: 0;
+    background-color: #F1E4E6;
+    background: #F1E4E6;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.item_subscribed input {
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-radius: 16px 0 0 16px;
+}
+
+.item_subscribed button {
+    border: 1px solid #ccc;
+    border-radius: 0 16px 16px 0;
+    background: #F16D7F;
+    color: #fff;
+
+}
+
+.footer_logo {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
 @media (min-width:768px) and (max-width:1024px) {
     .brand__logo {
         width: 60%;
@@ -195,6 +302,8 @@ a {
     .examples {
         grid-template-columns: repeat(2, 2fr);
     }
+
+
 }
 
 @media (max-width:767px) {
@@ -207,7 +316,6 @@ a {
         width: 0px;
     }
 
-
     .brand__text {
         font-size: 26px;
         margin: auto;
@@ -219,7 +327,26 @@ a {
     }
 
     .chapters {
-        grid-template-areas:"women" "men" "kids" "accesories";
+        grid-template-areas: "women" "men" "kids" "accesories";
         justify-items: center;
     }
+
+    .footer_delivery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fd-item {
+        margin: 30px 0;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    .subscribe_relative {
+        justify-content: space-around;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
