@@ -281,9 +281,20 @@ a {
 
 .footer_logo {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 1;
 }
+
+.svg_footer {
+    transition: fill 0.4s;
+}
+
+.svg_footer:hover {
+    fill: #F16D7F;
+}
+
 
 @media (min-width:768px) and (max-width:1024px) {
     .brand__logo {
