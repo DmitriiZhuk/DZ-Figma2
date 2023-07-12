@@ -281,7 +281,7 @@ a {
 
 .footer_logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-aruond;
     align-items: center;
     position: relative;
     z-index: 1;
