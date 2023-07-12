@@ -209,10 +209,7 @@ a {
 
 
 .subscribe_overall {
-    position: absolute;
     width: 100%;
-
-    /* opacity: 0.8; */
 }
 
 .subscribe_overall img {
@@ -222,6 +219,7 @@ a {
 
 .subscribe_relative {
     position: relative;
+    top:-460px;
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -281,10 +279,9 @@ a {
 
 .footer_logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    background-color: #000000;
 }
 
 .svg_footer {
