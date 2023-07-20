@@ -1,0 +1,236 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.price {
+    color: $mainColor;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.gap{
+    gap:40px
+}
+
+.main__text {
+    color: $textColor;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.browse__more {
+    @extend %flexRow;
+    margin-bottom: 50px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: $fontLight;
+    border-color: $mainColor;
+    font-family: "Lato";
+    color: $mainColor;
+}
+
+
+.footer_text {
+    margin: 15px;
+    color: #FBFBFB;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.centered {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
+.nav {
+    background-color: $bgDark;
+    color: $fontLight;
+    font-size: 1.2em;
+
+    @extend %flexRow;
+    align-content: flex-end;
+    justify-content: space-around;
+
+    padding: 20px 10px;
+
+    &__left {
+        @extend %flexRow;
+        gap: 10px;
+    }
+
+    &__right {
+        @extend %flexRow;
+        gap: 10px;
+    }
+
+}
+
+.brand {
+    @extend %flexRow;
+    background-color: #F1E4E6;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+
+    &__logo {
+        max-width: 70%;
+    }
+
+    &__text {
+        color: $bgDark;
+        font-size: 48px;
+        font-weight: 900;
+        border-left: 12px solid $mainColor;
+        padding-left: 16px;
+    }
+
+    &__color {
+        color: $mainColor;
+        font-weight: 600;
+    }
+}
+
+.new_arr {
+    background-color: $arrivalsColor;
+    @extend %flexRow;
+    justify-content: space-around;
+    height: 5vh;
+
+    &_item {
+        color: $mainColor;
+    }
+
+    .blacked {
+        color: $bgDark;
+        background-color: $arrivalsColor;
+    }
+
+}
+
+.arr_preview {
+    @extend %flexRow;
+    justify-content: space-between;
+    background-color: $arrivalsColor;
+
+}
+
+.item_details {
+    @extend %flexRow;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 70vw;
+
+    &_description {
+        @extend %flexRow;
+        margin: 20px;
+        color: $textColor;
+    }
+}
+
+.examples {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-bottom: 50px;
+    gap: 20px;
+
+    .example_item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 18px;
+    }
+
+}
+
+.subscribe {
+    background-image: url("img/footer_all_img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    @extend %flexRow;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    .s_item {
+        @extend %flexRow;
+        flex-wrap: nowrap;
+        margin: 20px;
+    }
+
+    .s_photo {
+        border-radius: 50%;
+        width: 140px;
+    }
+
+    .s_text {
+        color: $textColor;
+        font-style: italic;
+    }
+
+    .item_subscribed {
+        display: inline-flex;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .item_subscribed input,
+    .item_subscribed button {
+        display: block;
+        padding: 8px 10px;
+        border: 0;
+        background-color: #F1E4E6;
+        background: #F1E4E6;
+        font: inherit;
+        box-sizing: border-box;
+    }
+
+    .item_subscribed input {
+        border: 1px solid #ccc;
+        border-right: 0;
+        border-radius: 16px 0 0 16px;
+    }
+
+    .item_subscribed button {
+        border: 1px solid #ccc;
+        border-radius: 0 16px 16px 0;
+        background: $mainColor;
+        color: #fff;
+
+    }
+
+}
+
+.footer_logo {
+    @extend %flexRow;
+    justify-content: space-around;
+    background-color: $bgDark;
+
+    .svg_footer {
+        transition: fill 0.4s;
+    }
+
+    .svg_footer:hover {
+        fill: $mainColor;
+    }
+}

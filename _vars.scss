@@ -1,0 +1,15 @@
+$bgDark: #222222;
+$fontLight: white;
+$mainColor: #F16D7F;
+$textColor: #9F9F9F;
+$arrivalsColor: #F8F3F4;
+
+%flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}

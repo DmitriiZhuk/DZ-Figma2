@@ -186,6 +186,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 10px;
+    background-color: #000000;
 }
 
 .fd-item {
@@ -208,37 +209,28 @@ a {
 }
 
 
-.subscribe_overall {
-    width: 100%;
-}
-
-.subscribe_overall img {
-    width: 100%;
-    height: auto;
-}
-
-.subscribe_relative {
-    position: relative;
-    top:-460px;
+.subscribe {
+    background-image: url("img/footer_all_img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
 }
 
 .s_item {
     display: flex;
-    width: 40vw;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 .s_photo {
     border-radius: 50%;
     width: 140px;
-    margin-top: 120px;
-    margin-bottom: 20px;
 }
 
 .s_text {
