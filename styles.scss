@@ -17,6 +17,11 @@ a {
     color: $textColor;
 }
 
+a:link {
+    text-decoration: none;
+    color: $textColor;
+}
+
 a:visited {
     text-decoration: none;
 }
@@ -171,12 +176,12 @@ a:visited {
                 line-height: normal;
                 color: $textColor;
 
-                .filter-options1-item:hover{
+                .filter-options1-item:hover {
                     color: $mainColor;
                 }
             }
 
-            .filter-options1:hover .choose-box-sizes{
+            .filter-options1:hover .choose-box-sizes {
                 display: flex;
             }
         }
