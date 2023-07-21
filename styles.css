@@ -21,11 +21,11 @@ img {
 
 a {
   text-decoration: none;
+  color: #9F9F9F;
 }
 
 a:visited {
   text-decoration: none;
-  color: #9F9F9F;
 }
 
 .price {

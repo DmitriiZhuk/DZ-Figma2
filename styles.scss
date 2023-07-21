@@ -14,11 +14,11 @@ img {
 
 a {
     text-decoration: none;
+    color: $textColor;
 }
 
 a:visited {
     text-decoration: none;
-    color: $textColor;
 }
 
 .price {
