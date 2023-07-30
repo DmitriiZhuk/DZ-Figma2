@@ -59,6 +59,12 @@ a:visited {
     color: $mainColor;
 }
 
+.reg_btn {
+    background-color: $mainColor;
+    color: $fontLight;
+    width: 168px;
+
+}
 
 .footer_text {
     margin: 15px;
@@ -372,6 +378,19 @@ a:visited {
 
 }
 
+.registration {
+    height: 148px;
+    display: flex;
+    background-color: #F8F3F4;
+
+    &__name {
+        display: flex;
+        align-items: center;
+        color: $mainColor;
+    }
+
+}
+
 .footer_logo {
     @extend %flexRow;
     justify-content: space-around;
@@ -383,5 +402,94 @@ a:visited {
 
     .svg_footer:hover {
         fill: $mainColor;
+    }
+}
+
+.form {
+    display: flex;
+    margin-bottom: 125px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__inputs {
+        width: 40vw;
+
+        &__text {
+            color: #222;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 20px;
+            max-width: 20vw;
+
+        }
+
+        &__field {
+            display: block;
+            width: 360px;
+            height: 45px;
+            flex-shrink: 0;
+            margin-bottom: 20px;
+            border: 1px solid $textColor;
+            font-family: 'Lato';
+            color: $textColor;
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        input[type=text]:focus {
+            border: 1px solid $mainColor;
+        }
+
+        .radio {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+        }
+
+        .radios {
+            margin: 20px;
+            color: $textColor;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+
+    }
+
+    &__description {
+        width: 40vw;
+        margin: 30px;
+
+        &__heading {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            color: #000;
+        }
+
+        &__text {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            margin-bottom: 24px;
+            margin: 10px;
+        }
+
+        &__list {
+            color: #000;
+            font-size: 24px;
+            font-weight: 300;
+            list-style: none;
+
+            .li__item {
+                margin: 10px;
+            }
+        }
+
     }
 }

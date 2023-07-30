@@ -65,6 +65,12 @@ a:visited {
   color: #F16D7F;
 }
 
+.reg_btn {
+  background-color: #F16D7F;
+  color: white;
+  width: 168px;
+}
+
 .footer_text {
   margin: 15px;
   color: #FBFBFB;
@@ -309,6 +315,17 @@ a:visited {
   color: #fff;
 }
 
+.registration {
+  height: 148px;
+  display: flex;
+  background-color: #F8F3F4;
+}
+.registration__name {
+  display: flex;
+  align-items: center;
+  color: #F16D7F;
+}
+
 .footer_logo {
   justify-content: space-around;
   background-color: #222222;
@@ -318,4 +335,78 @@ a:visited {
 }
 .footer_logo .svg_footer:hover {
   fill: #F16D7F;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 125px;
+  margin-top: 45px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form__inputs {
+  width: 40vw;
+}
+.form__inputs__text {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px;
+  max-width: 20vw;
+}
+.form__inputs__field {
+  display: block;
+  width: 360px;
+  height: 45px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  border: 1px solid #9F9F9F;
+  font-family: "Lato";
+  color: #9F9F9F;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.form__inputs input[type=text]:focus {
+  border: 1px solid #F16D7F;
+}
+.form__inputs .radio {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+.form__inputs .radios {
+  margin: 20px;
+  color: #9F9F9F;
+  font-size: 14px;
+  font-weight: 300;
+}
+.form__description {
+  width: 40vw;
+  margin: 30px;
+}
+.form__description__heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  color: #000;
+}
+.form__description__text {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 24px;
+  margin: 10px;
+}
+.form__description__list {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  list-style: none;
+}
+.form__description__list .li__item {
+  margin: 10px;
 }/*# sourceMappingURL=styles.css.map */
