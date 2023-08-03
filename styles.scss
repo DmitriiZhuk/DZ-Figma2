@@ -411,6 +411,7 @@ a:visited {
     margin-bottom: 125px;
     margin-top: 45px;
     flex-wrap: wrap;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
@@ -429,7 +430,7 @@ a:visited {
 
         &__field {
             display: block;
-            width: 360px;
+            width: 30vw;
             height: 45px;
             flex-shrink: 0;
             margin-bottom: 20px;
@@ -492,5 +493,55 @@ a:visited {
             }
         }
 
+    }
+}
+
+@media (max-width:768px) {
+    .examples {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscribe {
+        flex-direction: column;
+
+        .s_item {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width:428px) {
+    .examples {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subscribe {
+        flex-direction: column;
+
+        .s_item {
+            flex-wrap: wrap;
+        }
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100vw;
+
+        &__inputs {
+            width: 90vw;
+
+            &__field {
+                display: block;
+                width: 90vw;
+            }
+
+            &__text {
+                max-width: 90vw;
+            }
+        }
+
+        &__description {
+            width: 90vw;
+        }
     }
 }
